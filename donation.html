@@ -2,55 +2,32 @@
 <html>
 <head>
 <title>Donation page</title>
-<style>.donation-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-}
-
-.donation-form h3 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.donation-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.donation-form label {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.donation-form input, .donation-form textarea {
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-}
-
-.donation-form button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.donation-form button[type="submit"]:hover {
-  background-color: #0069d9;
-}</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <div class="nav-logo">
+        <h3>NGO</h3>
+      </div>
+      <div class="rightnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Donation</a></li>
+          <li><a href="">Info</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+        <a class="login-btn" href="login.html">Login</a>
+        <a class="signup-btn" href="signup.html">SignUp</a>
+      </div>
+    </div>
+  </header>
+  <!-- DONATION PAGE -->
+  <div class="container">
 <div class="donation-form">
-  <h3>Make a Donation</h3>
   <form>
+    <h3>Make a Donation</h3>
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Enter your name">
 
@@ -65,6 +42,7 @@
 
     <button type="submit">Donate Now</button>
   </form>
+</div>
 </div>
 </body>
 </html>
