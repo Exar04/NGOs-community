@@ -151,3 +151,92 @@
     background-color: #003165;
     cursor: pointer;
 }   
+
+.page {
+    display: none; /* hide all pages by default */
+}
+.page.active {
+    display: block; /* show active page */
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left {
+    flex: 1;
+  }
+  
+  .footer-left h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-right {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .footer-right p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer-right p br {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-wrap: wrap;
+    }
+    
+    .footer-left {
+      margin-bottom: 20px;
+    }
+    
+    .footer-right {
+      text-align: center;
+    }
+  }
+  
