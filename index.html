@@ -19,8 +19,8 @@
           <ul>
             <li><a href="#" onclick="openPage('home')">Home</a></li>
             <li><a href="#" onclick="openPage('donation')">Donation</a></li>
-            <li><a href="#" onclick="openPage('info')">Info</a></li>
             <li><a href="#" onclick="openPage('about')">About</a></li>
+            <li><a href="#" onclick="openPage('user')">Dashboard</a></li>
           </ul>
           <a class="login-btn" href="#" onclick="openPage('login')">Login</a>
           <a class="signup-btn" href="#" onclick="openPage('signup')">SignUp</a>
@@ -30,8 +30,6 @@
     <!-- HOME CONTAINER -->
     <div class="container">
       <main>
-
-
         <section id="home" class="page active">
           <!-- Contents of the home page -->
           <h2>Help us to make a difference!</h2>
@@ -40,6 +38,9 @@
                 and activities.
               </p>
               <a href="#">Learn More</a>
+              <!--  -->
+              <br> <br> <br>
+              <a class="signup-btn" href="#" onclick="openPage('feed')">See Community</a>
           </section>
 
 
@@ -72,16 +73,10 @@
 
         <section id="about" class="page active">
           <!-- Contents of the about page -->
-          <h1>About Us</h1>
+          <hr>
+              <h1>About Us</h1>
+              <hr><br> 
               <p>Non-governmental organizations (NGOs) strive to address some of the most pressing global issues and promote a better future for all. One of the significant challenges faced by NGOs is to provide education to the uneducated. Furthermore, the existing online platforms come at a cost, which adds an additional hurdle. Therefore, we have developed a website that offers NGOs a tool to create their websites and a platform to promote their events and activities. Our solution assists NGOs in building their online presence and increasing their outreach to raise awareness and garner volunteers to support their cause.</p>
-              <h2>Features of Our Website:</h2>
-              <ul>
-                <li>Generate webpages for each NGO</li>
-                <li>Create a landing page for each registered NGO</li>
-                <li>Showcase an NGO's previous events and display future events</li>
-                <li>A clean and functional Dashboard to edit the NGO landing page, events, and other pages</li>
-                <li>Enable volunteers to register so that NGO can get a list of interested volunteers and communicate with them for future collaborations</li>
-                <li>Optional features: A donation portal for each NGO, a notification system to connect NGOs who want to collaborate for future events, and a chat feature to enable NGOs to talk to volunteers and/or other NGOs</li>
               </ul>
         </section>
 
@@ -128,6 +123,55 @@
             </div>
         </form>
         </section>
+
+        <!-- FEED -->
+        <section id="feed" class="page active">
+          <form id="post-form">
+            <label for="post-title">Title:</label>
+            <input type="text" id="post-title" name="post-title">
+            <label for="post-content">Content:</label>
+            <textarea id="post-content" name="post-content"></textarea>
+            <label for="post-image">Image:</label>
+            <input type="file" id="post-image" name="post-image">
+            <button type="submit">Create Post</button>
+        </form>
+        <div id="post-list">
+            <!-- Posts will be dynamically added here -->
+        </div>
+          </section>
+
+          <section id="user" class="page active">
+            <section id="profile">
+              <div class="profile-image">
+                <img src="https://via.placeholder.com/150" alt="Profile Image">
+              </div>
+              <div class="profile-info">
+                <h1>Nishant Dixit</h1>
+                <p>Student</p>
+                <p>Maharashtra, India</p>
+                <p>Rating : 458</p>
+              </div>
+            </section>
+        
+            <section id="userActivity">
+              <h2>Recent Actions</h2>
+              <ul>
+                <li>
+                  <p>Bharatiya Help Program - Volunteer</p>
+                  <p>Posted: Mar 1, 2023</p>
+                </li>
+                <li>
+                  <p>NGO Mumbai- Volunteer</p>
+                  <p>Posted: Feb 28, 2023</p>
+                </li>
+                <li>
+                  <p>NGO Pune- Volunteer</p>
+                  <p>Posted: Feb 27, 2023</p>
+                </li>
+              </ul>
+            </section>
+            </section>
+  
 
 
     </div>
